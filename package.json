@@ -1,7 +1,7 @@
 {
-  "name": "convector-boilderplate",
+  "name": "convector-boilerplate",
   "version": "1.0.0",
-  "description": "Boilderplate for a Convector project",
+  "description": "Boilerplate for a Convector project",
   "author": "Diego Barahona <diestrin@gmail.com>",
   "license": "Apache-2.0",
   "scripts": {
