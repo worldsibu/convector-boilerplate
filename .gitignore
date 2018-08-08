@@ -1,0 +1,14 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+.convector-dev-env
+
+# Dependency directories
+**/node_modules
+
+# Mac
+.DS_Store
+
+dist
