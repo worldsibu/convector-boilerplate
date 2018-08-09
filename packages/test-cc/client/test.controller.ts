@@ -1,4 +1,3 @@
-import * as yup from 'yup';
 import {
   Controller,
   ConvectorController,
@@ -11,9 +10,9 @@ import { ControllerAdapter } from '@worldsibu/convector-core-adapter';
 
 
 export class TestControllerClient extends ConvectorController {
-  private name = 'test';
+  public name = 'test';
 
-  constructor(private adapter: ControllerAdapter) {
+  constructor(public adapter: ControllerAdapter, public user?: string) {
     super()
   }
 
@@ -22,6 +21,6 @@ export class TestControllerClient extends ConvectorController {
     
     test: Test
   ) {
-    await this.adapter.invoke(this.name, 'create', undefined, test);
+    await this.adapter.invoke(this.name, 'create', this.user, test);
   }
 }
