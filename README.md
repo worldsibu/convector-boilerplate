@@ -6,7 +6,7 @@ Make sure to have [Docker](https://www.docker.com/get-started) and [Nodejs](http
 
 Run `npm i` to install the neccesary modules, then do `npm run restart` to start (or restart) a fresh build. This will create a blockchain environment using Hyperledger Fabric 1.1.
 
-A blockchain project is not only made of smart contracts, thus thw project is built using [lerna](https://github.com/lerna/lerna) to organize the different modules. This is totally optional and you can remove it if you want. If you're not familiar with the lerna commands, refer to our `package.json`, we have some scripts already prepared for you.
+A blockchain project is not only made of smart contracts, thus the project is built using [lerna](https://github.com/lerna/lerna) to organize the different modules. This is totally optional and you can remove it if you want. If you're not familiar with the lerna commands, refer to our `package.json`, we have some scripts already prepared for you.
 
 ## Chaincode
 
