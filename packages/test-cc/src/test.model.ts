@@ -18,12 +18,10 @@ export class Test extends ConvectorModel<Test> {
 
   @ReadOnly()
   @Required()
-  @Default(() => Date.now())
   @Validate(yup.number())
   public created: number;
 
   @Required()
-  @Default(() => Date.now())
   @Validate(yup.number())
   public modified: number;
 }

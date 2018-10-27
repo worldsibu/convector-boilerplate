@@ -28,7 +28,12 @@ describe('TestCtrl', () => {
 
   it('should create a new instance', async () => {
     const id = uuid();
-    await testCtrl.create(new Test({ id, name: 'Test' }));
+    await testCtrl.create(new Test({
+      id,
+      name: 'Test',
+      created: Date.now(),
+      modified: Date.now()
+    }));
 
     const result = await adapter.getById<Test>(id);
 
